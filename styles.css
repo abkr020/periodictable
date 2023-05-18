@@ -1,0 +1,212 @@
+.fsb {
+    --fsb: scale(1.1);
+    --red: red;
+}
+.fpb {
+    --fpb: scale(1.1);
+    --yellow: yellow;
+}
+.fdb {
+    --fdb: scale(1.1);
+    --green: green;
+}
+.ffb {
+    --ffb: scale(1.1);
+    --blue: blue;
+}
+
+
+.fng {
+    --fng: scale(1.1);
+
+}
+
+.fhalo {
+    --fhalo: scale(1.1);
+}
+
+.fnm {
+    --fnm: scale(1.1);
+    /* --bright: 1.75; */
+}
+
+/* .blur{ */
+/* --blur: (4px); */
+/* } */
+
+/* --fsb:scale(1.5); */
+.periodictable {
+    background-color: aqua;
+
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+
+    border: 2px solid red;
+    color: green;
+}
+
+.pt {
+    display: grid;
+    background-color: gray;
+    /* grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px 90px; */
+    /* grid-template-columns: 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px; */
+    grid-template-rows: repeat(10, 70px);
+    /* 80px */
+    grid-template-columns: repeat(18, 70px);
+}
+
+.state {
+    display: flex;
+}
+
+.list {
+    /* cursor: pointer; */
+    margin: 13px;
+    padding: 10px;
+
+}
+
+.item {
+    border: 2px solid red;
+    /* tranceparent */
+    text-align: center;
+    /* justify-content: center; */
+}
+
+
+
+
+.ng {
+    background-color: aqua;
+    transform: var(--fng);
+
+}
+
+.halo {
+    /* filter: url(--blur); */
+    background-color: violet;
+    transform: var(--fhalo);
+}
+
+.nm {
+    background-color: purple;
+    transform: var(--fnm);
+    /* filter: brightness(--bright); */
+}
+
+.list:hover {
+    cursor: pointer;
+
+}
+
+#list1:hover {
+    /* transform: scale(1.5); */
+    color: blue;
+
+
+}
+
+#list6:hover {
+    /* transform: scale(1.5); */
+    color: violet;
+}
+
+#list7:hover {
+    /* transform: scale(1.5); */
+    color: purple;
+}
+
+/* #list3:hover {
+    /* transform: scale(1.5); */
+/* color: violet; */
+/* }  */
+/* #item1:hover{ */
+
+/* transform: scale(1.5) */
+/* transform: scale(--fsb); */
+/* transform: var(--fsb); */
+/* } */
+/* .item:hover{
+    
+    transform: scale(1.2)
+} */
+
+/* .item1{
+    background-color: purple;
+} */
+.item2 {
+    /* grid-column-start: 2; */
+    /* grid-column-end: 18; */
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: black;
+    /* color: aliceblue; */
+}
+
+/*.item4{
+    grid-row-start: 2;
+    grid-row-end: 8;
+    background-color: bisque;
+}
+.item3{
+    grid-row-start: 1;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: bisque;
+}
+
+.item5{
+    grid-column-start: 3;
+    grid-column-end: 13;
+    background-color: black;
+}
+.item14{
+    grid-column-start: 3;
+    grid-column-end: 13;
+    background-color: black;
+}
+.item6{
+    background-color: green;
+}
+.item7{
+    grid-column-start: 14;
+    grid-column-end: 17;
+    background-color: purple;
+} */
+
+.s {
+    background-color: blue;
+    background-color: var(--red);
+
+    transform: var(--fsb);
+}
+.p{
+    transform: var(--fpb);
+    background-color: var(--yellow);
+}
+.d{
+    transform: var(--fdb);
+    background-color: var(--green);
+}
+.f{
+    transform: var(--ffb);
+    background-color: var(--blue);
+
+}
+.state s:hover {
+    background-color: red;
+}
+.state p:hover{
+background-color: yellow;
+
+}
+.state d:hover{
+background-color: green;
+
+}
+.state f:hover{
+background-color: blue;
+
+}
