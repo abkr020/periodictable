@@ -6,22 +6,76 @@ for (var i = 0; i < img.length; i++) {
     img[i].addEventListener("mouseover", function () { setEffect(this); });
     img[i].addEventListener("mouseout", resEffect);
 };
+// function displayTxt(evt) {
+    
+//     evt.currentTarget.parentNode.querySelector( '#list1a' ).classList.remove( 'hide' );
+//     // evt.currentTarget.parentNode.querySelector( '.this' ).classList.remove( 'hide' );
+// }
+// // if leave -> hide txt
+// function removeTxt(evt) {
+//         evt.currentTarget.querySelector( '#list1a' ).classList.add( 'hide' );
+//         // evt.currentTarget.querySelector( '.this' ).classList.add( 'hide' );
+//     }
+    
+//     /* mouseover and mouseout events to `.wrapper` element */
+//     var $wrapper = document.querySelector( '.wrapper' );
+//     $wrapper.addEventListener( 'mouseover', displayTxt );
+//     $wrapper.addEventListener( 'mouseout', removeTxt );
+//     function setEffect(el) {
+//         for (var i = 0; i < img.length; i++) {
+//             img[i].removeAttribute('style');
+//             // evt.currentTarget.parentNode.querySelector( '#list1a' ).classList.remove( 'hide' );
+            
+//     };
+    
+//     el.setAttribute('style', 'transform: scale(1.35);');
+//     // for (var i = 0; i < img.length; i++) {
+//     //     img[i].setAttribute('style', 'filter: blur(15px);');
+//     // };
+//     // el.removeAttribute('style');
+
+//     }
+//     function resEffect() {
+//         for (var i = 0; i < img.length; i++) {
+//             img[i].removeAttribute('style');
+//     };
+// }
 function setEffect(el) {
     for (var i = 0; i < img.length; i++) {
-        img[i].setAttribute('style', 'filter: blur(15px);');
-    };
-    el.removeAttribute('style');
+        // if (1<2) {
+            
+            // img[i].setAttribute('style', 'filter: blur(15px);');
+            img[i].removeAttribute('style');
+            // }
+        };
+        // el.removeAttribute('style');
+        el.setAttribute('style', 'transform: scale(1.1);');
 }
 function resEffect() {
     for (var i = 0; i < img.length; i++) {
         img[i].removeAttribute('style');
     };
 }
+// function setEffect(el) {
+//     for (var i = 0; i < img.length; i++) {
+//         if (1<2) {
+            
+//             // img[i].setAttribute('style', 'transform: scale(1.1);');
+//             img[i].setAttribute('style', 'filter: blur(15px);');
+//         }
+//     };
+//     el.removeAttribute('style');
+// }
+// function resEffect() {
+//     for (var i = 0; i < img.length; i++) {
+//         img[i].removeAttribute('style');
+//     };
+// }
 
 
 
 
-function setEffect1(block) {
+function setEffect1(block,el) {
     var k=block
     // console.log(k);
     // console.log(typeof(k));
@@ -31,6 +85,7 @@ function setEffect1(block) {
         if (img[i].classList.contains(k)) {   
         }
         else{
+            // img[i].setAttribute('style', 'transform: scale(19px);');
             img[i].setAttribute('style', 'filter: blur(15px);');
         }
     };
@@ -98,3 +153,90 @@ element43.addEventListener("mouseover", function () { setEffect1("Unknown"); });
 element41.addEventListener("mouseout", resEffect); 
 element42.addEventListener("mouseout", resEffect);
 element43.addEventListener("mouseout", resEffect);
+
+
+
+// if hover -> display txt
+// function displayTxt(pdfg,evt) {
+//     var pdf=pdfg
+//     console.log(pdf)
+//     evt.currentTarget.parentNode.querySelector( '#list1a' ).classList.remove( 'hide' );
+//     // evt.currentTarget.parentNode.querySelector( '.this' ).classList.remove( 'hide' );
+// }
+// // if leave -> hide txt
+// function removeTxt(evt) {
+//     evt.currentTarget.querySelector( '#list1a' ).classList.add( 'hide' );
+//     // evt.currentTarget.querySelector( '.this' ).classList.add( 'hide' );
+// }
+
+// /* mouseover and mouseout events to `.wrapper` element */
+// var $wrapper = document.querySelector( '.wrapper' );
+// $wrapper.addEventListener( 'mouseover', displayTxt("1") );
+// $wrapper.addEventListener( 'mouseout', removeTxt );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if hover -> display txt
+// function displayTxt(evt) {
+//     evt.currentTarget.parentNode.querySelector( '.this' ).classList.remove( 'hide' );
+// }
+// // if leave -> hide txt
+// function removeTxt(evt) {
+//     evt.currentTarget.querySelector( '.this' ).classList.add( 'hide' );
+// }
+
+// /* mouseover and mouseout events to `.wrapper` element */
+// var wrapper = document.querySelector( '.wrapper' );
+// for (var i = 0; i < img.length; i++) {
+// img[i].addEventListener( 'mouseover',function(){ displayTxt });
+// wrapper.addEventListener( 'mouseout',function() {removeTxt} );
+// }
+
+
+
+
+
+// function displayTxt(evt,k) {
+//     console.log(i);
+//     if (k==1) {
+        
+//         evt.currentTarget.parentNode.querySelector( '.this' ).classList.remove( 'hide' );
+//     }
+
+//     // evt.currentTarget.parentNode.querySelector( '.this' ).classList.remove( 'hide' );
+// }
+// // if leave -> hide txt
+// function removeTxt(evt,k) {
+//     if (k==1) {
+        
+//         evt.currentTarget.querySelector( '.this' ).classList.add( 'hide' );
+//     }
+// }
+
+// /* mouseover and mouseout events to `.wrapper` element */
+// // var $wrapper = document.querySelector( '.mydiv' );
+// for (var i = 0; i < img.length; i++) {
+
+
+
+//     img[i].addEventListener( 'mouseover', displayTxt(i) );
+//     img[i].addEventListener( 'mouseout', removeTxt );
+// }

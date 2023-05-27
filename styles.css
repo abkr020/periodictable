@@ -1,79 +1,109 @@
-:root{
-    --a:red;
+:root {
+    --a: red;
     --blur: (40px);
 }
-body{
+
+body {
     background-color: rgb(70, 69, 69);
 }
-.state{
+
+.state {
     color: white;
 }
-h4{
+
+h4 {
     border: 2px solid red;
 }
-.list{
+
+.list {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
     border: 2px solid red;
 }
+
 .pt {
     display: grid;
     background-color: gray;
-    grid-template-rows: repeat(10, 50px);
-    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: repeat(10, 60px);
+    grid-template-columns: repeat(18, 60px);
 }
-.item{
+
+.item {
+    border: 1px solid red;
     display: flex;
+    flex-direction: column;
     /* line-height: 200px; */
     /* text-align: center; */
     /* justify-items: center; */
     justify-content: center;
     align-items: center;
 }
-.am{
+
+.am {
     background-color: orange;
 }
-.aem{
+
+.aem {
     background-color: lightyellow;
 }
-.ptrm{
+
+.ptrm {
     background-color: yellow;
 }
-.rnonm{
+
+.rnonm {
     background-color: green;
 }
-.meta{
+
+.meta {
     background-color: brown;
 }
-.ng{
+
+.ng {
     background-color: lightskyblue;
 }
-.halo{
+
+.halo {
     /* background-color: violet; */
 }
-.d{
+
+.d {
     background-color: lightgreen;
 }
-.la{
+
+.la {
     background-color: lightblue;
 }
-.ac{
+
+.ac {
     background-color: rgb(217, 110, 110);
 }
-.Unknown{
+
+.Unknown {
     background-color: darkkhaki;
 }
-#item1:hover{
+
+#item1:hover {
     /* filter: url(--blur); */
     /* filter: var(--blur); */
-    
-    background-color: var(--a);
-
-    
-
+    /* background-color: var(--a); */
 }
-.state{
+
+.state {
     display: flex;
 }
 
+
+.hide {
+    display: none;
+}
+      
+/* .mydiv:hover + .hide {
+    display: block;
+    color: red;
+} */
+/* #item1:hover + .hide {
+    display: block;
+    color: red;
+} */
